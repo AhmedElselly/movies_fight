@@ -1,3 +1,6 @@
+.container {
+  padding: 20px;
+}
 .tutorial {
   width: 600px;
   text-align: center;
