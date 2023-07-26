@@ -1,7 +1,7 @@
 const createAutocomplete = ({ root, renderOption, onOptionSelect, inputValue, fetchData }) => {
 	root.innerHTML = `
-		<label><b>Search</b></label>
-		<input type="text" placeholder="e.g: aliens" />
+		<label class='is-size-3'><b>Search</b></label>
+		<input type="text" placeholder="e.g: aliens" class="input is-large" />
 		<div class="dropdown">
 		<div class="dropdown-menu">
 			<div class="dropdown-content results"></div>
