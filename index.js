@@ -67,9 +67,9 @@ const runComparison = () => {
 	const rightSideStats = document.querySelectorAll('#right-summary .notification');
 	leftSideStats.forEach((leftStat, index) => {
 		const rightStat = rightSideStats[index];
-		const leftSideValue = leftStat.dataset.value;
-		const rightSideValue = rightStat.dataset.value;
-		if(parseInt(rightSideValue) > parseInt(leftSideValue)) {
+		const leftSideValue = index === 3 ? parseFloat(leftStat.dataset.value) : parseInt(leftStat.dataset.value);
+		const rightSideValue = index === 3 ? parseFloat(rightStat.dataset.value) : parseInt(rightStat.dataset.value);
+		if(rightSideValue > leftSideValue) {
 			leftStat.classList.remove('is-primary');
 			leftStat.classList.add('is-warning');
 		} else {
